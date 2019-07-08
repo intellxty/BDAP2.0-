@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import HomePage from './Homepage';
-import './index.css';
 
 ReactDOM.render(
     <Router>
@@ -14,8 +13,8 @@ ReactDOM.render(
 window.onload = function(){
     setTimeout(function(){
         var loader = document.getElementsByClassName("loader")[0];
-        //loader.className=".fadeout" ;
-        //setTimeout(function(){loader.style.display="none"},1000)
+        loader.className="loader fadeout" ;
+        setTimeout(function(){loader.style.display="none"},2000)
     },1000)
 }
 /*window.onload = function(){
